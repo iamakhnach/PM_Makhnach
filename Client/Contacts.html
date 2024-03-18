@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши контакты</title>
+    <link rel="stylesheet" href="ContactStyle.css">
+    <link rel="stylesheet" href="BurgerMenuStyle.css">
+</head>
+<body>
+    <section class="top-nav">
+        <div>
+            Сервис ремонта оргтехники
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="price-list.php">Прайс-лист</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </section>
+    <div class="container">
+        <h1 class="brand"><span>Наши контакты</span></h1>  
+        <div class="wrapper">   
+            <div class="company-info">   
+                <ul>
+                    <li><i class="fa fa-road"></i> Ярославль</li>
+                    <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+                    <li><i class="fa fa-envelope"></i> remontorg@yar.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Оставьте заявку</h3>   
+                <form id="contact-form">   
+                    <p>
+                        <label>Имя</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>   
+                    <p>
+                        <label>Фамилия</label>
+                        <input type="text" name="company" id="company">
+                    </p>
+                    <p>
+                        <label>Отчество</label>
+                        <input type="text" name="company" id="company">
+                    </p>
+                    <p>
+                        <label>Номер телефона</label>
+                        <input type="text" name="phone" id="phone">
+                    </p>
+                    <p class="full">
+                        <label>Описание проблемы</label>
+                        <textarea name="message" rows="5" id="message"></textarea>
+                    </p>
+    
+                    <p class="full">
+                        <button type="submit">Оставить заявку</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

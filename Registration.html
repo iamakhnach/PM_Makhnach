@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-light"></div>
+    <div class="login-box2">
+        <form action="Register.php" method="post">
+            <h2>Регистрация</h2>
+            <div class="input-box">
+                <input type="text" name="name" required onkeypress="return validateInput(event)">
+                <label>Имя</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+                <input type="text" name="surname" required onkeypress="return validateInput(event)">
+                <label>Фамилия</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+                <input type="text" name="patronymic" required onkeypress="return validateInput(event)">
+                <label>Отчество</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" required>
+                <label>Логин</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" required>
+                <label>Пароль</label>
+                <div class="input-line"></div>
+            </div>
+            <button type="submit">Создать аккаунт</button>
+            <div class="register-link">
+                <p><a href="Authorization.html">Авторизация</a></p>
+            </div>
+    </form>
+    </div>
+    <script>
+        function validateInput(evt) {
+          var charCode = (evt.which) ? evt.which : event.keyCode;
+          if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return true;
+          }
+          return false;
+        }
+      </script>
+</body>
+</html>
